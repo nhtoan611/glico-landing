@@ -30,37 +30,35 @@
     </div>
 
     <div class="content">
-      <div class="countdown-wrapper">
-        <p class="countdown-title">Thời gian chương trình</p>
-        <p class="countdown-title countdown-date">Từ 20/11/2019 - 31/12/2019</p>
-        <div class="countdown-timer">
-          <p>Chỉ còn</p>
-          <div class="timer-wrapper">
-            <div id="days">
-              <div class="time-unit" id="day-quotient"></div>
-              <div class="time-unit" id="day-remainder"></div>
-              <span>Ngày</span>
-            </div>
-
-            <div id="hours">
-              <div class="time-unit" id="hour-quotient"></div>
-              <div class="time-unit" id="hour-remainder"></div>
-              <span>Giờ</span>
-            </div>
-
-            <div id="minutes">
-              <div class="time-unit" id="minute-quotient"></div>
-              <div class="time-unit" id="minute-remainder"></div>
-              <span>Phút</span>
-            </div>
-
-            <div id="seconds">
-              <div class="time-unit" id="second-quotient"></div>
-              <div class="time-unit" id="second-remainder"></div>
-              <span>Giây</span>
-            </div>
-
+      <div class="countdown-title">Thời gian chương trình</div>
+      <div class="countdown-title countdown-date">Từ 20/11/2019 - 31/12/2019</div>
+      <div class="countdown-timer">
+        <p>Chỉ còn</p>
+        <div class="timer-wrapper">
+          <div id="days">
+            <div class="time-unit" id="day-quotient"></div>
+            <div class="time-unit" id="day-remainder"></div>
+            <span>Ngày</span>
           </div>
+
+          <div id="hours">
+            <div class="time-unit" id="hour-quotient"></div>
+            <div class="time-unit" id="hour-remainder"></div>
+            <span>Giờ</span>
+          </div>
+
+          <div id="minutes">
+            <div class="time-unit" id="minute-quotient"></div>
+            <div class="time-unit" id="minute-remainder"></div>
+            <span>Phút</span>
+          </div>
+
+          <div id="seconds">
+            <div class="time-unit" id="second-quotient"></div>
+            <div class="time-unit" id="second-remainder"></div>
+            <span>Giây</span>
+          </div>
+
         </div>
       </div>
 
@@ -72,11 +70,45 @@
         <div id="btn-store">Cửa hàng áp dụng</div>
       </div>
     </div>
-    
+
     <div id="store-location-page">
-      <div id="store-location-container">
-        <img src="img/year-end-campaign1.svg" alt="Year End Campaign 1">
+      <div class="location-selector">
+        <div id="city">
+          <select>
+            <option value="0">Select car:</option>
+            <option value="1">Audi</option>
+            <option value="2">BMW</option>
+            <option value="3">Citroen</option>
+            <option value="4">Ford</option>
+            <option value="5">Honda</option>
+            <option value="6">Jaguar</option>
+            <option value="7">Land Rover</option>
+            <option value="8">Mercedes</option>
+            <option value="9">Mini</option>
+            <option value="10">Nissan</option>
+            <option value="11">Toyota</option>
+            <option value="12">Volvo</option>
+          </select>
+        </div>
+        <div id="district">
+          <select>
+            <option value="0">Select car:</option>
+            <option value="1">Audi</option>
+            <option value="2">BMW</option>
+            <option value="3">Citroen</option>
+            <option value="4">Ford</option>
+            <option value="5">Honda</option>
+            <option value="6">Jaguar</option>
+            <option value="7">Land Rover</option>
+            <option value="8">Mercedes</option>
+            <option value="9">Mini</option>
+            <option value="10">Nissan</option>
+            <option value="11">Toyota</option>
+            <option value="12">Volvo</option>
+          </select>
+        </div>
       </div>
+      <div class="store-list"></div>
     </div>
   </div>
 </body>

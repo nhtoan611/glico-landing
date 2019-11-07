@@ -2,11 +2,11 @@ body {
   font-family: "Noto Sans";
 }
 
-/* .home {
+.home {
   display: flex;
   flex-direction: column;
   align-items: center;
-} */
+}
 
 .header {
   display: flex;
@@ -54,24 +54,23 @@ body {
 
 /* todo */
 
-.countdown-wrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.home .content {
+  width: 100%;
 }
 
-.countdown-wrapper .countdown-title {
+.content .countdown-title {
+  text-align: center;
   font-weight: 800;
   font-size: 22px;
   line-height: 30px;
   color: #F287B7;
 }
 
-.countdown-wrapper .countdown-date {
+.content .countdown-date {
   font-weight: normal;
 }
 
-.countdown-wrapper .countdown-timer {
+.content .countdown-timer {
   /* margin-top: 8px; */
   width: 100%;
   height: 110px;
@@ -133,7 +132,8 @@ body {
   margin-top: 36px;
 }
 
-.btn-wrapper #btn-gift, #btn-store {
+.btn-wrapper #btn-gift,
+#btn-store {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -155,5 +155,12 @@ body {
 }
 
 .home #store-location-page {
+  background-image: url("../img/year-end-campaign1.svg"), linear-gradient(to right, #F287B7, #F287B7);
+  background-size: contain;
+  background-repeat: no-repeat;
+  border-radius: 12px 12px 12px 12px;
   margin-top: 60px;
+  width: 1000px;
+  height: 500px;
 }
+
