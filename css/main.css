@@ -1,4 +1,4 @@
-body {
+* {
   font-family: "Noto Sans";
 }
 
@@ -20,7 +20,6 @@ body {
 }
 
 .header p {
-  font-style: normal;
   font-weight: 800;
   font-size: 22px;
   line-height: 30px;
@@ -132,8 +131,7 @@ body {
   margin-top: 36px;
 }
 
-.btn-wrapper #btn-gift,
-#btn-store {
+.btn-wrapper>div {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -164,3 +162,29 @@ body {
   height: 500px;
 }
 
+#store-location-page .location-selector {
+  float: left;
+  width: 40%;
+  padding-top: 45px;
+  padding-left: 74px;
+}
+
+.location-selector select {
+  background: #FFFFFF;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 6px;
+  color: #F287B7;
+  width: 320px;
+  height: 60px;
+  margin-bottom: 37px;
+  padding: 18px 25px;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 25px;
+}
+
+#store-location-page .store-list {
+  float: left;
+  width: 60%;
+  padding-top: 45px;
+}
