@@ -1,5 +1,5 @@
 * {
-  font-family: "Noto Sans";
+  font-family: 'Noto Sans', sans-serif;
 }
 
 .home {
@@ -484,7 +484,7 @@
 }
 
 .footer-note p {
-  font-family: Roboto;
+  font-family: 'Roboto', sans-serif;
   font-weight: normal;
   font-size: 12px;
   line-height: 14px;
