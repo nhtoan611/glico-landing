@@ -7,6 +7,11 @@ $(document).ready(function () {
       scrollTop: $("#store-location-page").offset().top
     }, 1000);
   });
+  $("#btn-gift").click(function () {
+    $('html, body').animate({
+      scrollTop: $("#gift-page1").offset().top
+    }, 1000);
+  });
 });
 
 function countdownTimer() {
