@@ -7,6 +7,9 @@
   flex-direction: column;
   align-items: center;
   position: relative;
+  background-image: url("../img/background.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .header {
@@ -27,7 +30,9 @@
   margin-left: 8px;
 }
 
-.header .header-hotline, .header-facebook, .header-website {
+.header .header-hotline,
+.header-facebook,
+.header-website {
   display: flex;
   align-items: center;
 }
@@ -64,18 +69,20 @@
 .home .content {
   width: 65vw;
   background: #FDEBEC;
-  padding-top: 350px;
-  margin-top: 275px;
+  padding-top: 20vw;
+  margin-top: 38vw;
 }
 
 .content #empty-div {
   visibility: hidden;
   height: 500px;
+  width: 80%;
 }
 
 .content>img {
   display: block;
   margin: 0 auto;
+  width: 80%;
 }
 
 .content .countdown-title {
@@ -139,7 +146,10 @@
   color: #ffffff;
 }
 
-#days, #hours, #minutes, #seconds {
+#days,
+#hours,
+#minutes,
+#seconds {
   margin: 0 10px;
 }
 
@@ -193,13 +203,14 @@
 
 .home #store-location-page {
   background-image: url("../img/year-end-campaign1.svg"), linear-gradient(to right, #F287B7, #F287B7);
-  background-size: contain;
+  background-size: 100%;
   background-repeat: no-repeat;
-  border-radius: 12px 12px 12px 12px;
-  width: 1000px;
+  border-radius: 12px;
+  width: 75%;
   height: 500px;
   padding-top: 45px;
   position: relative;
+  background-position-y: calc(100% + 1px);
 }
 
 #store-location-page #flower3 {
@@ -222,7 +233,8 @@
 
 /*the container must be positioned relative:*/
 
-.custom-select, .custom-select2 {
+.custom-select,
+.custom-select2 {
   position: relative;
   width: 100%;
   height: 60px;
@@ -262,7 +274,8 @@
 
 /*style the items (options), including the selected item:*/
 
-.select-items div, .select-selected {
+.select-items div,
+.select-selected {
   color: #F287B7;
   padding: 8px 16px;
   border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
@@ -294,7 +307,8 @@
   display: none;
 }
 
-.select-items div:hover, .same-as-selected {
+.select-items div:hover,
+.same-as-selected {
   background-color: rgba(253, 235, 236, 0.7);
 }
 
@@ -378,6 +392,30 @@
   top: -115px;
 }
 
+#gift-page1 #gift1 {
+  position: relative;
+  top: -145px;
+  width: 25%;
+  height: 350px;
+  margin-left: 25%;
+}
+
+#gift-page1 #gift1>img {
+  height: inherit;
+}
+
+#gift-page1 #gift2 {
+  position: relative;
+  top: -493px;
+  width: 29%;
+  height: 350px;
+  margin-left: 56%;
+}
+
+#gift-page1 #gift2>img {
+  height: inherit;
+}
+
 .home #gift-page2 {
   position: relative;
   width: 80vw;
@@ -399,6 +437,42 @@
   top: -115px;
 }
 
+#gift-page2 #gift3 {
+  position: relative;
+  top: -143px;
+  width: 25%;
+  height: 350px;
+  margin-left: 21%;
+}
+
+#gift-page2 #gift3>img {
+  height: inherit;
+}
+
+#gift-page2 #gift4 {
+  position: relative;
+  top: -493px;
+  width: 29%;
+  height: 350px;
+  margin-left: 45%;
+}
+
+#gift-page2 #gift4>img {
+  height: inherit;
+}
+
+#gift-page2 #gift5 {
+  position: relative;
+  top: -841px;
+  width: 29%;
+  height: 350px;
+  margin-left: 72%;
+}
+
+#gift-page2 #gift5>img {
+  height: inherit;
+}
+
 .home #gift-page3 {
   position: relative;
   width: 80vw;
@@ -418,6 +492,30 @@
   position: absolute;
   left: -20px;
   top: -115px;
+}
+
+#gift-page3 #gift6 {
+  position: relative;
+  top: -125px;
+  width: 25%;
+  height: 225px;
+  margin-left: 25%;
+}
+
+#gift-page3 #gift6>img {
+  height: inherit;
+}
+
+#gift-page3 #gift7 {
+  position: relative;
+  top: -350px;
+  width: 29%;
+  height: 225px;
+  margin-left: 60%;
+}
+
+#gift-page3 #gift7>img {
+  height: inherit;
 }
 
 .home .content3 {
@@ -442,7 +540,9 @@
   margin-left: 8px;
 }
 
-.contact .contact-hotline, .contact-facebook, .contact-website {
+.contact .contact-hotline,
+.contact-facebook,
+.contact-website {
   display: flex;
   align-items: center;
 }
@@ -489,4 +589,18 @@
   font-size: 12px;
   line-height: 14px;
   color: #ED3982;
+}
+
+.home .gift-title {
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 30px;
+  color: #F287B7;
+}
+
+.home .gift-detail {
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 25px;
+  color: #6C59A6;
 }
