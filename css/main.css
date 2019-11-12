@@ -23,16 +23,16 @@
   align-items: center;
   background: #FDEBEC;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.05);
-  height: 50px;
+  height: 3.5vw;
   width: 100%;
 }
 
 .header p {
-  font-weight: 800;
-  font-size: 22px;
-  line-height: 30px;
+  font-weight: bold;
+  font-size: 1.5vw;
+  line-height: 2vw;
   color: #F287B7;
-  margin-left: 8px;
+  margin-left: 0.5vw;
 }
 
 .header .header-hotline,
@@ -40,6 +40,11 @@
 .header-website {
   display: flex;
   align-items: center;
+}
+
+.header-facebook img {
+  width: 2vw;
+  height: 2vw;
 }
 
 .header .header-facebook:hover {
@@ -51,19 +56,19 @@
 }
 
 .header .logo-hotline {
-  width: 76px;
-  height: 24px;
+  width: 5.3vw;
+  height: 1.7vw;
   background: #F287B7;
-  border-radius: 7px;
+  border-radius: 0.5vw;
   color: #ffffff;
   text-align: center;
-  font-weight: 800;
-  font-size: 10px;
-  line-height: 24px;
+  font-weight: bold;
+  font-size: 0.7vw;
+  line-height: 1.7vw;
 }
 
 .header .logo-website {
-  width: 50px;
+  width: 3.5vw;
 }
 
 .home #cloud1 {
@@ -80,7 +85,7 @@
 
 .welcome-page {
   position: absolute;
-  top: 50px;
+  top: 3.5vw;
 }
 
 .welcome-page img {
@@ -112,9 +117,9 @@
 .welcome-title {
   position: absolute;
   text-align: center;
-  font-size: 56px;
-  line-height: 75px;
-  top: calc(18vw + 50px);
+  font-size: 3.9vw;
+  line-height: 5.2vw;
+  top: 21vw;
 }
 
 .home .content {
@@ -181,8 +186,8 @@
 .content .countdown-title {
   text-align: center;
   font-weight: 800;
-  font-size: 22px;
-  line-height: 30px;
+  font-size: 1.5vw;
+  line-height: 2vw;
   color: #F287B7;
 }
 
@@ -193,7 +198,7 @@
 .content .countdown-timer {
   /* margin-top: 8px; */
   width: 100%;
-  height: 110px;
+  height: 7.6vw;
   display: flex;
   align-items: center;
   position: relative;
@@ -201,8 +206,8 @@
 
 .countdown-timer>p {
   font-weight: bold;
-  font-size: 14px;
-  line-height: 19px;
+  font-size: 1vw;
+  line-height: 1.3vw;
   color: #F287B7;
   position: absolute;
   right: 85%;
@@ -225,19 +230,19 @@
 .timer-wrapper span {
   display: block;
   font-weight: 800;
-  font-size: 14px;
-  line-height: 19px;
+  font-size: 1vw;
+  line-height: 1.3vw;
   color: #F287B7;
-  margin-top: 8px;
+  margin-top: 0.5vw;
 }
 
 .timer-wrapper .time-unit {
   background: #F287B7;
-  border-radius: 6px;
+  border-radius: 0.4vw;
   font-weight: bold;
-  font-size: 36px;
-  line-height: 60px;
-  width: 40px;
+  font-size: 2.5vw;
+  line-height: 4.1vw;
+  width: 2.7vw;
   color: #ffffff;
 }
 
@@ -245,14 +250,14 @@
 #hours,
 #minutes,
 #seconds {
-  margin: 0 10px;
+  margin: 0 0.7vw;
 }
 
 .content .btn-wrapper {
   display: flex;
   justify-content: center;
-  margin-top: 36px;
-  margin-bottom: 60px;
+  margin-top: 2.5vw;
+  margin-bottom: 4.1vw;
 }
 
 .btn-wrapper>div {
@@ -262,14 +267,14 @@
   background: #ED3982;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   color: #ffffff;
-  margin: 0 15px;
+  margin: 0 1vw;
   text-align: center;
-  font-weight: 800;
-  font-size: 24px;
+  font-weight: bold;
+  font-size: 1.6vw;
   cursor: pointer;
-  border-radius: 56px;
-  width: 320px;
-  height: 100px;
+  border-radius: 3.9vw;
+  width: 22.2vw;
+  height: 6.9vw;
 }
 
 .btn-wrapper #btn-gift {
@@ -282,12 +287,17 @@
 
 #btn-gift #flower1 {
   position: absolute;
-  top: -30px;
-  left: -30px;
+  top: -2.1vw;
+  left: -2.1vw;
+}
+
+#btn-gift #flower1>img {
+  width: 10.4vw;
 }
 
 #btn-gift>img {
-  margin-right: 8px;
+  margin-right: 0.5vw;
+  width: 2.6vw;
 }
 
 .btn-wrapper #btn-store {
@@ -300,38 +310,51 @@
 
 #btn-store #flower2 {
   position: absolute;
-  right: -55px;
-  bottom: -45px;
+  right: -3.8vw;
+  bottom: -3.1vw;
+}
+
+#btn-store #flower2>img {
+  width: 11.4vw;
 }
 
 .home #store-location-page {
   background-image: url("../img/year-end-campaign1.png"), linear-gradient(to right, #F287B7, #F287B7);
   background-size: 100%;
   background-repeat: no-repeat;
-  border-radius: 12px;
+  border-radius: 0.8vw;
   width: 75%;
   height: 45vw;
-  padding-top: 45px;
+  padding-top: 3.1vw;
   position: relative;
   background-position-y: calc(100% + 1px);
 }
 
 #store-location-page #flower3 {
   position: absolute;
-  top: -30px;
-  right: -50px;
+  top: -2.1vw;
+  right: -3.5vw;
+}
+
+#store-location-page #flower3>img {
+  width: 8.8vw;
 }
 
 #store-location-page #flower4 {
   position: absolute;
-  left: -85px;
-  bottom: -30px;
+  left: -5.9vw;
+  bottom: -2.1vw;
 }
+
+#store-location-page #flower4>img {
+  width: 12.3vw;
+}
+
 
 #store-location-page .location-selector {
   float: left;
   width: 40%;
-  padding-left: 74px;
+  padding-left: 5.1vw;
 }
 
 /*the container must be positioned relative:*/
@@ -340,11 +363,11 @@
 .custom-select2 {
   position: relative;
   width: 100%;
-  height: 60px;
-  font-weight: 800;
-  font-size: 18px;
-  line-height: 25px;
-  margin-bottom: 37px;
+  height: 4.2vw;
+  font-weight: bold;
+  font-size: 1.25vw;
+  line-height: 1.7vw;
+  margin-bottom: 2.6vw;
 }
 
 .custom-select select {
@@ -359,7 +382,7 @@
 .select-selected {
   background-color: #ffffff;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  border-radius: 6px;
+  border-radius: 0.4vw;
 }
 
 /*style the arrow inside the select element:*/
@@ -367,11 +390,11 @@
 .select-selected:after {
   position: absolute;
   content: "";
-  top: 17px;
-  right: 20px;
+  top: 1.2vw;
+  right: 1.4vw;
   width: 0;
   height: 0;
-  border: 6px solid transparent;
+  border: 0.4vw solid transparent;
   border-color: #F287B7 transparent transparent transparent;
 }
 
@@ -380,13 +403,13 @@
 .select-items div,
 .select-selected {
   color: #F287B7;
-  padding: 8px 16px;
+  padding: 0.5vw 1.1vw;
   border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
   cursor: pointer;
   user-select: none;
   font-weight: 800;
-  font-size: 18px;
-  line-height: 25px;
+  font-size: 1.25vw;
+  line-height: 1.7vw;
 }
 
 /*style items (options):*/
@@ -397,11 +420,11 @@
   top: 100%;
   left: 0;
   right: 0;
-  max-height: 420px;
+  max-height: 29.1vw;
   overflow-y: scroll;
   z-index: 99;
   box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.25);
-  border-radius: 6px;
+  border-radius: 0.5vw;
 }
 
 /*hide the items when the select box is closed:*/
@@ -426,39 +449,39 @@
 
 .store-list .store-address {
   width: 90%;
-  height: 72px;
+  height: 5vw;
   background: #FDEBEC;
   background-blend-mode: multiply;
-  border-radius: 36px;
-  padding: 18px 36px;
-  margin-bottom: 5px;
+  border-radius: 2.5vw;
+  padding: 1.25vw 2.5vw;
+  margin-bottom: 0.2vw;
 }
 
 .store-address p {
   font-weight: 500;
-  font-size: 13px;
-  line-height: 18px;
+  font-size: 0.9vw;
+  line-height: 1.25vw;
   /* color: #FFFFFF; */
   color: #F287B7;
 }
 
 .store-address .store-name {
   font-weight: 800;
-  font-size: 16px;
-  line-height: 22px;
+  font-size: 1.1vw;
+  line-height: 1.5vw;
 }
 
 ::-webkit-scrollbar {
-  width: 5px;
+  width: 0.3vw;
 }
 
 ::-webkit-scrollbar-track {
   -webkit-box-shadow: inset 0 0 5px #FDEBEC;
-  border-radius: 10px;
+  border-radius: 0.7vw;
 }
 
 ::-webkit-scrollbar-thumb {
-  border-radius: 10px;
+  border-radius: 0.7vw;
   -webkit-box-shadow: inset 0 0 5px rgba(242, 135, 183, 0.5);
 }
 
@@ -662,9 +685,8 @@
 
 .home .content3 {
   width: 65vw;
-  height: 300px;
+  height: 20.8vw;
   background: #FDEBEC;
-  padding-top: 100px;
   position: relative;
 }
 
@@ -672,14 +694,16 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
+  position: relative;
+  bottom: -3.5vw;
 }
 
 .contact p {
   font-weight: 800;
-  font-size: 18px;
-  line-height: 25px;
+  font-size: 1.25vw;
+  line-height: 1.7vw;
   color: #F287B7;
-  margin-left: 8px;
+  margin-left: 0.5vw;
 }
 
 .contact .contact-hotline,
@@ -693,51 +717,64 @@
   cursor: pointer;
 }
 
+.contact .contact-facebook>img {
+  width: 2vw;
+  height: 2vw;
+}
+
 .contact .contact-website:hover {
   cursor: pointer;
 }
 
 .contact .logo-hotline {
-  width: 64px;
-  height: 20px;
+  width: 4.4vw;
+  height: 1.4vw;
   background: #F287B7;
   border-radius: 7px;
   color: #ffffff;
   text-align: center;
-  font-weight: 800;
-  font-size: 10px;
-  line-height: 20px;
+  font-weight: bold;
+  font-size: 0.7vw;
+  line-height: 1.4vw;
 }
 
 .contact .logo-website {
-  width: 40px;
+  width: 2.8vw;
 }
 
 .content3 #flower9 {
   position: absolute;
   left: 50%;
   transform: translate(-50%, 0);
-  bottom: -155px;
+  bottom: -10.8vw;
+}
+
+.content3 #flower9>img {
+  width: 32vw;
 }
 
 .content3 #banner4 {
   position: absolute;
   left: 50%;
   transform: translate(-50%, 0);
-  bottom: -18px;
+  bottom: -1.25vw;
+}
+
+.content3 #banner4>img {
+  width: 18vw;
 }
 
 .home .footer-note {
-  margin-top: 225px;
-  margin-bottom: 50px;
+  margin-top: 15.6vw;
+  margin-bottom: 3.5vw;
   text-align: center;
 }
 
 .footer-note p {
   font-family: 'Roboto', sans-serif;
   font-weight: normal;
-  font-size: 12px;
-  line-height: 14px;
+  font-size: 0.8vw;
+  line-height: 1vw;
   color: #ED3982;
 }
 
@@ -769,19 +806,7 @@
   cursor: pointer;
 }
 
-@media screen and (max-width: 1439px) {
-  .welcome-title {
-    font-size: 48px;
-    line-height: 53px;
-  }
-}
-
 @media screen and (max-width: 1023px) {
-  .welcome-title {
-    font-size: 48px;
-    line-height: 53px;
-  }
-
   .home #store-location-page {
     height: auto;
     padding-bottom: 75px;
@@ -791,6 +816,7 @@
     float: none;
     padding-left: 0;
     margin: 0 auto;
+    width: 50%;
   }
 
   #store-location-page .store-list {
@@ -800,4 +826,5 @@
     padding-left: 0;
     margin-left: calc(50% - 22.5vw);
   }
+
 }
