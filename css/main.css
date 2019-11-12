@@ -2,6 +2,11 @@
   font-family: 'Noto Sans', sans-serif;
 }
 
+@font-face {
+  font-family: iCielSoup;
+  src: url('../fonts/iCielSoupofJustice.ttf') format('truetype');
+}
+
 .home {
   display: flex;
   flex-direction: column;
@@ -35,6 +40,14 @@
 .header-website {
   display: flex;
   align-items: center;
+}
+
+.header .header-facebook:hover {
+  cursor: pointer;
+}
+
+.header .header-website:hover {
+  cursor: pointer;
 }
 
 .header .logo-hotline {
@@ -76,6 +89,34 @@
   width: 90vw;
 }
 
+.welcome-title p {
+  color: #fff;
+  font-family: iCielSoup;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  transition: all 0.5s;
+  -webkit-animation: neon 1.5s ease-in-out infinite alternate;
+  -moz-animation: neon 1.5s ease-in-out infinite alternate;
+  animation: neon 1.5s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes neon {
+  from {
+    text-shadow: 0 0 2px #000000, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #FFDD1B, 0 0 70px #FFDD1B, 0 0 80px #FFDD1B, 0 0 100px #FFDD1B, 0 0 150px #FFDD1B;
+  }
+  to {
+    text-shadow: 0 0 1px #000000, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #FFDD1B, 0 0 35px #FFDD1B, 0 0 40px #FFDD1B, 0 0 50px #FFDD1B, 0 0 75px #FFDD1B;
+  }
+}
+
+.welcome-title {
+  position: absolute;
+  text-align: center;
+  font-size: 56px;
+  line-height: 75px;
+  top: calc(18vw + 50px);
+}
+
 .home .content {
   width: 65vw;
   background: #FDEBEC;
@@ -92,17 +133,49 @@
 }
 
 @keyframes shake {
-  0% { transform: translate(1px, 1px) rotate(0deg); }
-  10% { transform: translate(-1px, -2px) rotate(-1deg); }
-  20% { transform: translate(-3px, 0px) rotate(1deg); }
-  30% { transform: translate(3px, 2px) rotate(0deg); }
-  40% { transform: translate(1px, -1px) rotate(1deg); }
-  50% { transform: translate(-1px, 2px) rotate(-1deg); }
-  60% { transform: translate(-3px, 1px) rotate(0deg); }
-  70% { transform: translate(3px, 1px) rotate(-1deg); }
-  80% { transform: translate(-1px, -1px) rotate(1deg); }
-  90% { transform: translate(1px, 2px) rotate(0deg); }
-  100% { transform: translate(1px, -2px) rotate(-1deg); }
+  0% {
+    transform: translate(1px, 1px) rotate(0deg);
+  }
+
+  10% {
+    transform: translate(-1px, -2px) rotate(-1deg);
+  }
+
+  20% {
+    transform: translate(-3px, 0px) rotate(1deg);
+  }
+
+  30% {
+    transform: translate(3px, 2px) rotate(0deg);
+  }
+
+  40% {
+    transform: translate(1px, -1px) rotate(1deg);
+  }
+
+  50% {
+    transform: translate(-1px, 2px) rotate(-1deg);
+  }
+
+  60% {
+    transform: translate(-3px, 1px) rotate(0deg);
+  }
+
+  70% {
+    transform: translate(3px, 1px) rotate(-1deg);
+  }
+
+  80% {
+    transform: translate(-1px, -1px) rotate(1deg);
+  }
+
+  90% {
+    transform: translate(1px, 2px) rotate(0deg);
+  }
+
+  100% {
+    transform: translate(1px, -2px) rotate(-1deg);
+  }
 }
 
 .content .countdown-title {
@@ -137,7 +210,7 @@
 
 .countdown-timer .timer-wrapper {
   margin: auto;
-  height: 60px;
+  height: 6vw;
   width: 60vw;
   left: 0;
   right: 0;
@@ -232,12 +305,12 @@
 }
 
 .home #store-location-page {
-  background-image: url("../img/year-end-campaign1.svg"), linear-gradient(to right, #F287B7, #F287B7);
+  background-image: url("../img/year-end-campaign1.png"), linear-gradient(to right, #F287B7, #F287B7);
   background-size: 100%;
   background-repeat: no-repeat;
   border-radius: 12px;
   width: 75%;
-  height: 500px;
+  height: 45vw;
   padding-top: 45px;
   position: relative;
   background-position-y: calc(100% + 1px);
@@ -346,7 +419,7 @@
   float: left;
   height: 80%;
   width: 44%;
-  padding-left: 50px;
+  padding-left: 5vw;
   overflow-x: hidden;
   overflow-y: auto;
 }
@@ -616,6 +689,14 @@
   align-items: center;
 }
 
+.contact .contact-facebook:hover {
+  cursor: pointer;
+}
+
+.contact .contact-website:hover {
+  cursor: pointer;
+}
+
 .contact .logo-hotline {
   width: 64px;
   height: 20px;
@@ -681,8 +762,42 @@
 }
 
 .zoom:hover {
-  transform: scale(1.1)!important; /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  transform: scale(1.1) !important;
+  /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
   animation-duration: 5s;
   transition: 0.5s all ease-in-out;
   cursor: pointer;
+}
+
+@media screen and (max-width: 1439px) {
+  .welcome-title {
+    font-size: 48px;
+    line-height: 53px;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .welcome-title {
+    font-size: 48px;
+    line-height: 53px;
+  }
+
+  .home #store-location-page {
+    height: auto;
+    padding-bottom: 75px;
+  }
+
+  #store-location-page .location-selector {
+    float: none;
+    padding-left: 0;
+    margin: 0 auto;
+  }
+
+  #store-location-page .store-list {
+    float: none;
+    width: 50vw;
+    max-height: 40vw;
+    padding-left: 0;
+    margin-left: calc(50% - 22.5vw);
+  }
 }
