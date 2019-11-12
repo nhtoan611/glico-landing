@@ -53,7 +53,17 @@
   width: 50px;
 }
 
-/* todo */
+.home #cloud1 {
+  position: absolute;
+  top: 30vh;
+  left: 3vw;
+}
+
+.home #cloud2 {
+  position: absolute;
+  top: 20vh;
+  right: 6vw;
+}
 
 .welcome-page {
   position: absolute;
@@ -73,16 +83,26 @@
   margin-top: 38vw;
 }
 
-.content #empty-div {
-  visibility: hidden;
-  height: 500px;
-  width: 80%;
-}
-
 .content>img {
   display: block;
   margin: 0 auto;
   width: 80%;
+  animation: shake 0.5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
 }
 
 .content .countdown-title {
@@ -112,14 +132,16 @@
   line-height: 19px;
   color: #F287B7;
   position: absolute;
-  left: 25%;
+  right: 85%;
 }
 
 .countdown-timer .timer-wrapper {
+  margin: auto;
   height: 60px;
+  width: 60vw;
+  left: 0;
+  right: 0;
   position: absolute;
-  left: 50%;
-  transform: translate(-50%, 0);
   text-align: center;
 }
 
@@ -181,6 +203,10 @@
   position: relative;
 }
 
+.btn-wrapper #btn-gift:hover {
+  background: #ED1C24;
+}
+
 #btn-gift #flower1 {
   position: absolute;
   top: -30px;
@@ -193,6 +219,10 @@
 
 .btn-wrapper #btn-store {
   position: relative;
+}
+
+.btn-wrapper #btn-store:hover {
+  background: #ED1C24;
 }
 
 #btn-store #flower2 {
@@ -315,14 +345,14 @@
 #store-location-page .store-list {
   float: left;
   height: 80%;
-  width: 43%;
+  width: 44%;
   padding-left: 50px;
   overflow-x: hidden;
   overflow-y: auto;
 }
 
 .store-list .store-address {
-  width: 340px;
+  width: 90%;
   height: 72px;
   background: #FDEBEC;
   background-blend-mode: multiply;
@@ -368,7 +398,7 @@
 .home #gift-page1 {
   position: relative;
   width: 80vw;
-  height: 408px;
+  height: 350px;
   background: #FFFFFF;
   box-shadow: 0px 15px 25px rgba(215, 168, 189, 0.4);
   border-radius: 12px;
@@ -392,28 +422,24 @@
   top: -115px;
 }
 
-#gift-page1 #gift1 {
-  position: relative;
-  top: -145px;
-  width: 25%;
-  height: 350px;
-  margin-left: 25%;
+#gift-page1 .gift-list1 {
+  position: absolute;
+  left: 27%;
+  right: 4%;
+  top: -90px;
+  display: flex;
+  justify-content: space-between;
 }
 
-#gift-page1 #gift1>img {
-  height: inherit;
+.gift-list1 img {
+  width: 60%;
+  height: 60%;
+  display: block;
+  margin: 0 auto;
 }
 
-#gift-page1 #gift2 {
-  position: relative;
-  top: -493px;
-  width: 29%;
-  height: 350px;
-  margin-left: 56%;
-}
-
-#gift-page1 #gift2>img {
-  height: inherit;
+.gift-list1 div {
+  width: 370px;
 }
 
 .home #gift-page2 {
@@ -437,40 +463,24 @@
   top: -115px;
 }
 
-#gift-page2 #gift3 {
-  position: relative;
-  top: -143px;
-  width: 25%;
-  height: 350px;
-  margin-left: 21%;
+#gift-page2 .gift-list2 {
+  position: absolute;
+  left: 20%;
+  right: 4%;
+  top: -57px;
+  display: flex;
+  justify-content: space-between;
 }
 
-#gift-page2 #gift3>img {
-  height: inherit;
+.gift-list2 img {
+  width: 60%;
+  height: 60%;
+  display: block;
+  margin: 0 auto;
 }
 
-#gift-page2 #gift4 {
-  position: relative;
-  top: -493px;
-  width: 29%;
-  height: 350px;
-  margin-left: 45%;
-}
-
-#gift-page2 #gift4>img {
-  height: inherit;
-}
-
-#gift-page2 #gift5 {
-  position: relative;
-  top: -841px;
-  width: 29%;
-  height: 350px;
-  margin-left: 72%;
-}
-
-#gift-page2 #gift5>img {
-  height: inherit;
+.gift-list2 div {
+  width: 276px;
 }
 
 .home #gift-page3 {
@@ -494,28 +504,24 @@
   top: -115px;
 }
 
-#gift-page3 #gift6 {
-  position: relative;
-  top: -125px;
-  width: 25%;
-  height: 225px;
-  margin-left: 25%;
+#gift-page3 .gift-list3 {
+  position: absolute;
+  left: 20%;
+  right: 4%;
+  top: -70px;
+  display: flex;
+  justify-content: space-around;
 }
 
-#gift-page3 #gift6>img {
-  height: inherit;
+.gift-list3 img {
+  width: 60%;
+  height: 60%;
+  display: block;
+  margin: 0 auto;
 }
 
-#gift-page3 #gift7 {
-  position: relative;
-  top: -350px;
-  width: 29%;
-  height: 225px;
-  margin-left: 60%;
-}
-
-#gift-page3 #gift7>img {
-  height: inherit;
+.gift-list3 div {
+  width: 390px;
 }
 
 .home .content3 {
@@ -603,4 +609,25 @@
   font-size: 18px;
   line-height: 25px;
   color: #6C59A6;
+}
+
+.home .empty-div {
+  height: 32px;
+}
+
+.zoom:hover {
+  transform: scale(1.1)!important; /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  animation-duration: 5s;
+  transition: 0.5s all ease-in-out;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1440px) {
+  #gift-page2 .gift-list2 {
+    right: 2%;
+  }
+  
+  .gift-list2 div {
+    width: 247px;
+  }
 }
