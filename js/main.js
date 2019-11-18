@@ -140,7 +140,6 @@ function setCitySelect() {
       customSelectbox(1);
       $('.select-items').children().on('click', function () {
         var city = $(this).html();
-        // console.log(city);
         setDistrictSelect(city);
       });
     }
