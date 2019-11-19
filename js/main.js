@@ -7,6 +7,18 @@ $(document).ready(function () {
   closeMenu();
   setCarousel();
   changeCarousel();
+  $('.tooltip').tooltipster({
+    side: 'top',
+    trigger: "custom",
+    triggerOpen: {
+      click: true,  // For mouse
+      tap: true    // For touch device
+    },
+    triggerClose: {
+      click: true,  // For mouse
+      tap: true    // For touch device
+    }
+  });
 });
 
 function countdownTimer() {
@@ -173,7 +185,18 @@ function displayStore(city, district) {
       $('.store-list>div').remove();
       data.forEach(function (store) {
         if ((store.city == city) && (store.district == district)) {
-          $('.store-list').append('<div class="store-address"><p class="store-name">' + store.name + '</p><p>' + store.address + '</p></div>')
+          if (store.address.length > 43) {
+            for (var i = 43; i > 0; i--) {
+              if (store.address[i] === '-') {
+                var shortAddress = store.address.substring(0, i);
+                shortAddress = shortAddress.concat(' ...');
+                break;
+              };
+            }
+            $('.store-list').append('<div class="store-address tooltip" title="' + store.address + '"><p class="store-name">' + store.name + '</p><p>' + shortAddress + '</p></div>');
+          } else {
+            $('.store-list').append('<div class="store-address"><p class="store-name">' + store.name + '</p><p>' + store.address + '</p></div>');
+          }
         };
       });
     }
@@ -336,10 +359,10 @@ function changeCarousel() {
   owl3.on('changed.owl.carousel', function (property) {
     var current = property.item.index;
     var src = $(property.target).find(".owl-item").eq(current).find("img").attr('src');
-    if(src==src1) {
+    if (src == src1) {
       $('#gift-page3-mobile .gift-title').text('Bàn chơi đa năng, tiện dụng');
       $('#gift-page3-mobile .gift-detail').text('Kích thích sáng tạo');
-    } else if (src==src2) {
+    } else if (src == src2) {
       $('#gift-page3-mobile .gift-title').text('Thảm chơi chống thấm, chống trượt');
       $('#gift-page3-mobile .gift-detail').text('Chất liệu an toàn cho bé');
     }
