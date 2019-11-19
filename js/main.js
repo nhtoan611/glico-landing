@@ -5,12 +5,6 @@ $(document).ready(function () {
   websiteRedirect();
   openMenu();
   closeMenu();
-  // if ($(window).width() > 375) {
-  //   setCarousel(0);
-  // };
-  // if ($(window).width() <= 375) {
-  //   setCarousel(20);
-  // };
   setCarousel();
   changeCarousel();
 });
@@ -292,12 +286,54 @@ function setCarousel() {
 }
 
 function changeCarousel() {
-  var owl = $('#gift-page3-mobile .owl-carousel');
+  var owl1 = $('#gift-page1-mobile .owl-carousel');
+  var owl2 = $('#gift-page2-mobile .owl-carousel');
+  var owl3 = $('#gift-page3-mobile .owl-carousel');
+
   var src1 = 'img/gift6.png';
   var src2 = 'img/gift7.png';
-  owl.owlCarousel();
+  var src3 = 'img/gift-m1.png';
+  var src4 = 'img/gift-m2.png';
+  var src5 = 'img/gift-m3.png';
+  var src6 = 'img/gift-m4.png';
+  var src7 = 'img/gift-m5.png';
+  var src8 = 'img/gift-m6.png';
+  var src9 = 'img/gift-m7.png';
+  var src10 = 'img/gift-m8.png';
+  var src11 = 'img/gift-m9.png';
+  var src12 = 'img/gift5.png';
+  var src13 = 'img/gift5-1.png';
+  var src14 = 'img/gift5-2.png';
+  var src15 = 'img/gift3.png';
   // Listen to owl events:
-  owl.on('changed.owl.carousel', function (property) {
+  owl1.on('changed.owl.carousel', function (property) {
+    var current = property.item.index;
+    var src = $(property.target).find(".owl-item").eq(current).find("img").attr('src');
+    if (src == src3 || src == src4 || src == src5) {
+      $('#gift-page1-mobile .gift-title').text('Ghế ăn dặm đa năng 3 chế độ');
+      $('#gift-page1-mobile .gift-detail').text('Tùy chỉnh độ cao, có thể gấp gọn và có bánh xe hỗ trợ bé tập đi');
+    } else if (src == src6 || src == src7 || src == src8) {
+      $('#gift-page1-mobile .gift-title').text('Xe chòi chân Motion thăng bằng cao cấp');
+      $('#gift-page1-mobile .gift-detail').text('Kèm bàn đạp phát triển vận động');
+    }
+  });
+
+  owl2.on('changed.owl.carousel', function (property) {
+    var current = property.item.index;
+    var src = $(property.target).find(".owl-item").eq(current).find("img").attr('src');
+    if (src == src9 || src == src10 || src == src11) {
+      $('#gift-page2-mobile .gift-title').text('Xe Bus kéo năng động');
+      $('#gift-page2-mobile .gift-detail').text('Kèm đồ chơi đồng hành cùng bé');
+    } else if (src == src12 || src == src13 || src == src14) {
+      $('#gift-page2-mobile .gift-title').text('Xe đẩy 5 bánh thông minh');
+      $('#gift-page2-mobile .gift-detail').text('Gấp gọn, nhẹ nhàng');
+    } else if (src == src15) {
+      $('#gift-page2-mobile .gift-title').text('Tủ nhựa cao cấp');
+      $('#gift-page2-mobile .gift-detail').text('Có bánh xe di chuyển tiện lợi');
+    }
+  });
+
+  owl3.on('changed.owl.carousel', function (property) {
     var current = property.item.index;
     var src = $(property.target).find(".owl-item").eq(current).find("img").attr('src');
     if(src==src1) {

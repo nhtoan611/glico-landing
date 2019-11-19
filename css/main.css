@@ -1231,6 +1231,12 @@
   #gift-page1-mobile .owl-dots button:nth-child(3) span {
     background-color: #A25F44;
   }
+  #gift-page1-mobile .owl-dots button:nth-child(4) span {
+    background-color: #48C3CB;
+  }
+  #gift-page1-mobile .owl-dots button:nth-child(6) span {
+    background-color: #ED1C24;
+  }
   #gift-page1-mobile .owl-dots button.active span {
     width: 3.5vw;
     height: 3.5vw;
@@ -1308,6 +1314,15 @@
   }
   #gift-page2-mobile .owl-dots button:nth-child(3) span {
     background-color: #FFD039;
+  }
+  #gift-page2-mobile .owl-dots button:nth-child(4) span {
+    background-color: #F287B7;
+  }
+  #gift-page2-mobile .owl-dots button:nth-child(5) span {
+    background-color: #000000;
+  }
+  #gift-page2-mobile .owl-dots button:nth-child(6) span {
+    background-color: #48C3CB;
   }
   #gift-page2-mobile .owl-dots button.active span {
     width: 3.5vw;
