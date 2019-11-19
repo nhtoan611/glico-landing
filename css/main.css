@@ -1,6 +1,5 @@
 * {
-  /* font-family: 'Noto Sans', sans-serif; */
-  font-family: 'NotoSans', sans-serif;
+  font-family: 'Noto Sans', sans-serif;
 }
 
 @font-face {
@@ -9,8 +8,8 @@
 }
 
 @font-face {
-  font-family: NotoSans;
-  src: url('../fonts/NotoSans-Regular.ttf') format('truetype');
+  font-family: NotoSansBold;
+  src: url('../fonts/NotoSans-Bold.ttf') format('truetype');
 }
 
 .home {
@@ -42,7 +41,7 @@
 }
 
 .header p {
-  font-weight: bold;
+  font-family: NotoSansBold;
   font-size: 1.5vw;
   line-height: 2vw;
   color: #F287B7;
@@ -216,7 +215,7 @@
 
 .content .countdown-title {
   text-align: center;
-  font-weight: 800;
+  font-family: NotoSansBold;
   font-size: 1.5vw;
   line-height: 2vw;
   color: #F287B7;
@@ -224,6 +223,7 @@
 
 .content .countdown-date {
   font-weight: normal;
+  font-family: 'Noto Sans', sans-serif;
 }
 
 .content .countdown-timer {
@@ -236,7 +236,7 @@
 }
 
 .countdown-timer #countdown-note {
-  font-weight: bold;
+  font-family: NotoSansBold;
   font-size: 1vw;
   line-height: 4.1vw;
   color: #F287B7;
@@ -262,7 +262,7 @@
 
 .timer-wrapper span {
   display: block;
-  font-weight: 800;
+  font-family: NotoSansBold;
   font-size: 1vw;
   line-height: 1.3vw;
   color: #F287B7;
@@ -299,7 +299,7 @@
   color: #ffffff;
   margin: 0 1vw;
   text-align: center;
-  font-weight: bold;
+  font-family: NotoSansBold;
   font-size: 1.6vw;
   cursor: pointer;
   border-radius: 3.9vw;
@@ -334,6 +334,10 @@
   margin-right: 0.5vw;
 }
 
+.btn-gift-content div {
+  font-family: NotoSansBold;
+}
+
 .gift-logo>img {
   width: 2.6vw;
 }
@@ -362,7 +366,7 @@
   background-repeat: no-repeat;
   border-radius: 0.8vw;
   width: 75%;
-  height: 45vw;
+  height: 34vw;
   padding-top: 3.1vw;
   position: relative;
   background-position-y: calc(100% + 1px);
@@ -390,7 +394,7 @@
 
 #store-location-page .location-selector {
   float: left;
-  width: 40%;
+  width: 37%;
   padding-left: 5.1vw;
 }
 
@@ -400,10 +404,10 @@
   position: relative;
   width: 100%;
   height: 4.2vw;
-  font-weight: bold;
+  font-family: NotoSansBold;
   font-size: 1.25vw;
-  line-height: 1.7vw;
-  margin-bottom: 2.6vw;
+  line-height: 4.2vw;
+  margin-bottom: 3.6vw;
 }
 
 .custom-select select {
@@ -425,8 +429,10 @@
 
 .select-selected:after {
   position: absolute;
+  display: block;
   content: "";
-  top: 1.2vw;
+  top: 50%;
+  transform: translateY(-50%);
   right: 1.4vw;
   width: 0;
   height: 0;
@@ -442,9 +448,9 @@
   border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
   cursor: pointer;
   user-select: none;
-  font-weight: 800;
+  font-family: NotoSansBold;
   font-size: 1.25vw;
-  line-height: 1.7vw;
+  line-height: 2.5vw;
 }
 
 /*style items (options):*/
@@ -805,7 +811,7 @@
 }
 
 .contact p {
-  font-weight: 800;
+  font-family: NotoSansBold;
   font-size: 1.25vw;
   line-height: 1.7vw;
   color: #F287B7;
@@ -887,7 +893,7 @@
 }
 
 .home .gift-title {
-  font-weight: bold;
+  font-family: NotoSansBold;
   font-size: 1.6vw;
   line-height: 1.35;
   color: #F287B7;

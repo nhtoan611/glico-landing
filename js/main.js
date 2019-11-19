@@ -129,7 +129,7 @@ function customSelectbox(selectFlg) {
 
 function setCitySelect() {
   $.ajax({
-    url: '/js/city.json',
+    url: 'https://nhtoan611.github.io/glico-landing/js/city.json',
     type: 'GET',
     success: function (data) {
       data.forEach(function (city) {
@@ -149,7 +149,7 @@ function setCitySelect() {
 
 function setDistrictSelect(city) {
   $.ajax({
-    url: '/js/district.json',
+    url: 'https://nhtoan611.github.io/glico-landing/js/district.json',
     type: 'GET',
     success: function (data) {
       $(".custom-select2 option[value!='0']").remove();
@@ -172,7 +172,7 @@ function setDistrictSelect(city) {
 
 function displayStore(city, district) {
   $.ajax({
-    url: '/js/store.json',
+    url: 'https://nhtoan611.github.io/glico-landing/js/store.json',
     type: 'GET',
     success: function (data) {
       $('.store-list>div').remove();
