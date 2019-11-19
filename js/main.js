@@ -5,12 +5,13 @@ $(document).ready(function () {
   websiteRedirect();
   openMenu();
   closeMenu();
-  if ($(window).width() > 375) {
-    setCarousel(0);
-  };
-  if ($(window).width() <= 375) {
-    setCarousel(20);
-  };
+  // if ($(window).width() > 375) {
+  //   setCarousel(0);
+  // };
+  // if ($(window).width() <= 375) {
+  //   setCarousel(20);
+  // };
+  setCarousel();
   changeCarousel();
 });
 
@@ -277,11 +278,11 @@ function websiteRedirect() {
   });
 }
 
-function setCarousel(x) {
+function setCarousel() {
   $('.owl-carousel').owlCarousel({
     loop: true,
     margin: 10,
-    stagePadding: 100 - x,
+    stagePadding: 100,
     responsive: {
       0: {
         items: 1
