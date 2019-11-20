@@ -8,40 +8,54 @@ $(document).ready(function () {
   closeMenu();
   setCarousel();
   changeCarousel();
+  // $('.custom-select2 .select-selected').click(function () {
+  //   if (conditionFlg == 0) {
+  //     if($(window).width() >425) {
+  //       $.alert({
+  //         title: 'Thông báo!',
+  //         content: 'Bố mẹ chưa chọn tỉnh/thành phố',
+  //         boxWidth: '37.5%',
+  //         useBootstrap: false,
+  //         type: 'red',
+  //         theme: 'my-theme',
+  //         backgroundDismiss: true
+  //       });
+  //     } else {
+  //       $.alert({
+  //         title: 'Thông báo!',
+  //         content: 'Bố mẹ chưa chọn tỉnh/thành phố',
+  //         boxWidth: '80%',
+  //         useBootstrap: false,
+  //         type: 'red',
+  //         theme: 'my-theme',
+  //         backgroundDismiss: true
+  //       });
+  //     }
+  //   }
+  // });
   $('.custom-select2 .select-selected').click(function () {
     if (conditionFlg == 0) {
       if($(window).width() >425) {
-        $.alert({
+        $.dialog({
           title: 'Thông báo!',
+          boxWidth: '37.5%',
           content: 'Bố mẹ chưa chọn tỉnh/thành phố',
-          boxWidth: '25%',
           useBootstrap: false,
           type: 'red',
-          theme: 'my-theme',
-          buttons : {
-            OK : {
-              btnClass: 'btn-default'
-            }
-          }
+          backgroundDismiss: true
         });
       } else {
-        $.alert({
+        $.dialog({
           title: 'Thông báo!',
           content: 'Bố mẹ chưa chọn tỉnh/thành phố',
           boxWidth: '80%',
           useBootstrap: false,
-          type: 'red',
-          theme: 'my-theme',
-          buttons : {
-            OK : {
-              btnClass: 'btn-default'
-            }
-          }
+          backgroundDismiss: true
         });
       }
-      
     }
   });
+
   $('.tooltip').tooltipster({
     side: 'top',
     trigger: "custom",

@@ -373,12 +373,8 @@
   background-position-y: calc(100% + 1px);
 }
 
-.jconfirm.jconfirm-my-theme .jconfirm-box .jconfirm-content{
-  overflow: hidden !important;
-}
-
 .jconfirm.jconfirm-my-theme .jconfirm-box .jconfirm-buttons{
-  float: right;
+  display: none;
 }
 
 #store-location-page #flower3 {
