@@ -14,6 +14,7 @@ $(document).ready(function () {
         $.alert({
           title: 'Thông báo!',
           content: 'Bố mẹ chưa chọn tỉnh/thành phố',
+          boxWidth: '30%',
           useBootstrap: false,
           type: 'red',
           theme: 'my-theme',

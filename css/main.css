@@ -178,7 +178,7 @@
 .content #title-arrow {
   width: 10%;
   padding-bottom: 2vw;
-  animation: pulse 0.4s infinite;
+  animation: pulse 0.2s infinite;
   animation-direction: alternate;
   -webkit-animation-name: pulse;
   animation-name: pulse;
