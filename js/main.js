@@ -275,10 +275,10 @@ function websiteRedirect() {
   });
   //gift img3
   $('.gift-img3 .dot-cyan').click(function () {
-    $('.gift-img3 img').attr('src', 'img/gift-m4.png');
+    $('.gift-img3 img').attr('src', 'img/gift-m7.png');
   });
   $('.gift-img3 .dot-yellow').click(function () {
-    $('.gift-img3 img').attr('src', 'img/gift-m6.png');
+    $('.gift-img3 img').attr('src', 'img/gift-m9.png');
   });
   $('.gift-img3 .dot-pink').click(function () {
     $('.gift-img3 img').attr('src', 'img/gift4.png');
