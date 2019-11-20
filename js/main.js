@@ -1,4 +1,5 @@
 $(document).ready(function () {
+  var conditionFlg = 0;
   countdownTimer();
   setCitySelect();
   customSelectbox(2);
@@ -7,6 +8,39 @@ $(document).ready(function () {
   closeMenu();
   setCarousel();
   changeCarousel();
+  $('.custom-select2 .select-selected').click(function () {
+    if (conditionFlg == 0) {
+      if($(window).width() >425) {
+        $.alert({
+          title: 'Thông báo!',
+          content: 'Bố mẹ chưa chọn tỉnh/thành phố',
+          useBootstrap: false,
+          type: 'red',
+          theme: 'my-theme',
+          buttons : {
+            OK : {
+              btnClass: 'btn-default'
+            }
+          }
+        });
+      } else {
+        $.alert({
+          title: 'Thông báo!',
+          content: 'Bố mẹ chưa chọn tỉnh/thành phố',
+          boxWidth: '80%',
+          useBootstrap: false,
+          type: 'red',
+          theme: 'my-theme',
+          buttons : {
+            OK : {
+              btnClass: 'btn-default'
+            }
+          }
+        });
+      }
+      
+    }
+  });
   $('.tooltip').tooltipster({
     side: 'top',
     trigger: "custom",
@@ -148,6 +182,7 @@ function setCitySelect() {
       customSelectbox(1);
       $('.select-items').children().on('click', function () {
         var city = $(this).html();
+        conditionFlg = 1;
         setDistrictSelect(city);
       });
     }
