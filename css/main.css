@@ -494,7 +494,7 @@
 
 .store-list .store-address {
   width: 90%;
-  height: 5vw;
+  height: 6vw;
   background: #FDEBEC;
   background-blend-mode: multiply;
   border-radius: 2.5vw;
@@ -1146,15 +1146,15 @@
   }
   .store-list .store-address {
     width: 90%;
-    height: 19vw;
+    height: 23vw;
     border-radius: 10.5vw;
     margin-bottom: 1.2vw;
-    padding: 4vw 0 3vw 8vw;
+    padding: 4vw 8vw 3vw 8vw;
   }
   .store-address p {
     font-weight: 500;
     font-size: 3.2vw;
-    line-height: 8.3vw;
+    line-height: 5vw;
   }
   .store-address .store-name {
     font-size: 3.7vw;

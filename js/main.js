@@ -235,18 +235,19 @@ function displayStore(city, district) {
       $('.store-list>div').remove();
       data.forEach(function (store) {
         if ((store.city == city) && (store.district == district)) {
-          if (store.address.length > 43) {
-            for (var i = 43; i > 0; i--) {
-              if (store.address[i] === ',') {
-                var shortAddress = store.address.substring(0, i);
-                shortAddress = shortAddress.concat(' ...');
-                break;
-              };
-            }
-            $('.store-list').append('<div class="store-address tooltip" title="' + store.address + '"><p class="store-name">' + store.name + '</p><p>' + shortAddress + '</p></div>');
-          } else {
-            $('.store-list').append('<div class="store-address"><p class="store-name">' + store.name + '</p><p>' + store.address + '</p></div>');
-          }
+          $('.store-list').append('<div class="store-address"><p class="store-name">' + store.name + '</p><p>' + store.address + '</p></div>');
+          // if (store.address.length > 43) {
+          //   for (var i = 43; i > 0; i--) {
+          //     if (store.address[i] === ',') {
+          //       var shortAddress = store.address.substring(0, i);
+          //       shortAddress = shortAddress.concat(' ...');
+          //       break;
+          //     };
+          //   }
+          //   $('.store-list').append('<div class="store-address tooltip" title="' + store.address + '"><p class="store-name">' + store.name + '</p><p>' + shortAddress + '</p></div>');
+          // } else {
+          //   $('.store-list').append('<div class="store-address"><p class="store-name">' + store.name + '</p><p>' + store.address + '</p></div>');
+          // }
         };
       });
     }
