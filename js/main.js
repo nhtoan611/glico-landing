@@ -237,7 +237,7 @@ function displayStore(city, district) {
         if ((store.city == city) && (store.district == district)) {
           if (store.address.length > 43) {
             for (var i = 43; i > 0; i--) {
-              if (store.address[i] === '-') {
+              if (store.address[i] === ',') {
                 var shortAddress = store.address.substring(0, i);
                 shortAddress = shortAddress.concat(' ...');
                 break;
